@@ -9,22 +9,10 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Mobile RettungskarteTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>376A762B1767295B00AA354C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>376A764B1767297100AA354C</key>
+		<key>376ECA3817674BE700F8992E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

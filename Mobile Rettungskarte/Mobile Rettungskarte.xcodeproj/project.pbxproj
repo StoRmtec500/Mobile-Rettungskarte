@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		376ECA3D17674BE700F8992E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376ECA3C17674BE700F8992E /* UIKit.framework */; };
+		376ECA3F17674BE700F8992E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376ECA3E17674BE700F8992E /* Foundation.framework */; };
+		376ECA4117674BE700F8992E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376ECA4017674BE700F8992E /* CoreGraphics.framework */; };
+		376ECA4717674BE700F8992E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 376ECA4517674BE700F8992E /* InfoPlist.strings */; };
+		376ECA4917674BE700F8992E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 376ECA4817674BE700F8992E /* main.m */; };
+		376ECA4D17674BE700F8992E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 376ECA4C17674BE700F8992E /* AppDelegate.m */; };
+		376ECA4F17674BE700F8992E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 376ECA4E17674BE700F8992E /* Default.png */; };
+		376ECA5117674BE700F8992E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 376ECA5017674BE700F8992E /* Default@2x.png */; };
+		376ECA5317674BE700F8992E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 376ECA5217674BE700F8992E /* Default-568h@2x.png */; };
+		376ECA5617674BE700F8992E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376ECA5417674BE700F8992E /* MainStoryboard.storyboard */; };
+		376ECA5917674BE700F8992E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376ECA5817674BE700F8992E /* MasterViewController.m */; };
+		376ECA5C17674BE700F8992E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 376ECA5B17674BE700F8992E /* DetailViewController.m */; };
+		376ECA641767563400F8992E /* BugSense-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376ECA631767563400F8992E /* BugSense-iOS.framework */; };
+		376ECA661767565600F8992E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376ECA651767565600F8992E /* SystemConfiguration.framework */; };
+		376ECA681767566400F8992E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 376ECA671767566400F8992E /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		376ECA3917674BE700F8992E /* Mobile Rettungskarte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Rettungskarte.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		376ECA3C17674BE700F8992E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		376ECA3E17674BE700F8992E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		376ECA4017674BE700F8992E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		376ECA4417674BE700F8992E /* Mobile Rettungskarte-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mobile Rettungskarte-Info.plist"; sourceTree = "<group>"; };
+		376ECA4617674BE700F8992E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		376ECA4817674BE700F8992E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		376ECA4A17674BE700F8992E /* Mobile Rettungskarte-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mobile Rettungskarte-Prefix.pch"; sourceTree = "<group>"; };
+		376ECA4B17674BE700F8992E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		376ECA4C17674BE700F8992E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		376ECA4E17674BE700F8992E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		376ECA5017674BE700F8992E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		376ECA5217674BE700F8992E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		376ECA5517674BE700F8992E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		376ECA5717674BE700F8992E /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		376ECA5817674BE700F8992E /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		376ECA5A17674BE700F8992E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		376ECA5B17674BE700F8992E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		376ECA6217674C1000F8992E /* Mobile Rettungskarte.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Mobile Rettungskarte.entitlements"; sourceTree = "<group>"; };
+		376ECA631767563400F8992E /* BugSense-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "BugSense-iOS.framework"; path = "../../../../Downloads/BugSense-iOS.framework"; sourceTree = "<group>"; };
+		376ECA651767565600F8992E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		376ECA671767566400F8992E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		376ECA3617674BE700F8992E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376ECA681767566400F8992E /* libz.dylib in Frameworks */,
+				376ECA661767565600F8992E /* SystemConfiguration.framework in Frameworks */,
+				376ECA641767563400F8992E /* BugSense-iOS.framework in Frameworks */,
+				376ECA3D17674BE700F8992E /* UIKit.framework in Frameworks */,
+				376ECA3F17674BE700F8992E /* Foundation.framework in Frameworks */,
+				376ECA4117674BE700F8992E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		376ECA3017674BE700F8992E = {
+			isa = PBXGroup;
+			children = (
+				376ECA671767566400F8992E /* libz.dylib */,
+				376ECA651767565600F8992E /* SystemConfiguration.framework */,
+				376ECA631767563400F8992E /* BugSense-iOS.framework */,
+				376ECA4217674BE700F8992E /* Mobile Rettungskarte */,
+				376ECA3B17674BE700F8992E /* Frameworks */,
+				376ECA3A17674BE700F8992E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		376ECA3A17674BE700F8992E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				376ECA3917674BE700F8992E /* Mobile Rettungskarte.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		376ECA3B17674BE700F8992E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				376ECA3C17674BE700F8992E /* UIKit.framework */,
+				376ECA3E17674BE700F8992E /* Foundation.framework */,
+				376ECA4017674BE700F8992E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		376ECA4217674BE700F8992E /* Mobile Rettungskarte */ = {
+			isa = PBXGroup;
+			children = (
+				376ECA6217674C1000F8992E /* Mobile Rettungskarte.entitlements */,
+				376ECA4B17674BE700F8992E /* AppDelegate.h */,
+				376ECA4C17674BE700F8992E /* AppDelegate.m */,
+				376ECA5417674BE700F8992E /* MainStoryboard.storyboard */,
+				376ECA5717674BE700F8992E /* MasterViewController.h */,
+				376ECA5817674BE700F8992E /* MasterViewController.m */,
+				376ECA5A17674BE700F8992E /* DetailViewController.h */,
+				376ECA5B17674BE700F8992E /* DetailViewController.m */,
+				376ECA4317674BE700F8992E /* Supporting Files */,
+			);
+			path = "Mobile Rettungskarte";
+			sourceTree = "<group>";
+		};
+		376ECA4317674BE700F8992E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				376ECA4417674BE700F8992E /* Mobile Rettungskarte-Info.plist */,
+				376ECA4517674BE700F8992E /* InfoPlist.strings */,
+				376ECA4817674BE700F8992E /* main.m */,
+				376ECA4A17674BE700F8992E /* Mobile Rettungskarte-Prefix.pch */,
+				376ECA4E17674BE700F8992E /* Default.png */,
+				376ECA5017674BE700F8992E /* Default@2x.png */,
+				376ECA5217674BE700F8992E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		376ECA3817674BE700F8992E /* Mobile Rettungskarte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 376ECA5F17674BE700F8992E /* Build configuration list for PBXNativeTarget "Mobile Rettungskarte" */;
+			buildPhases = (
+				376ECA3517674BE700F8992E /* Sources */,
+				376ECA3617674BE700F8992E /* Frameworks */,
+				376ECA3717674BE700F8992E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mobile Rettungskarte";
+			productName = "Mobile Rettungskarte";
+			productReference = 376ECA3917674BE700F8992E /* Mobile Rettungskarte.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		376ECA3117674BE700F8992E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Martin Kuenz";
+			};
+			buildConfigurationList = 376ECA3417674BE700F8992E /* Build configuration list for PBXProject "Mobile Rettungskarte" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 376ECA3017674BE700F8992E;
+			productRefGroup = 376ECA3A17674BE700F8992E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				376ECA3817674BE700F8992E /* Mobile Rettungskarte */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		376ECA3717674BE700F8992E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376ECA4717674BE700F8992E /* InfoPlist.strings in Resources */,
+				376ECA4F17674BE700F8992E /* Default.png in Resources */,
+				376ECA5117674BE700F8992E /* Default@2x.png in Resources */,
+				376ECA5317674BE700F8992E /* Default-568h@2x.png in Resources */,
+				376ECA5617674BE700F8992E /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		376ECA3517674BE700F8992E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376ECA4917674BE700F8992E /* main.m in Sources */,
+				376ECA4D17674BE700F8992E /* AppDelegate.m in Sources */,
+				376ECA5917674BE700F8992E /* MasterViewController.m in Sources */,
+				376ECA5C17674BE700F8992E /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		376ECA4517674BE700F8992E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				376ECA4617674BE700F8992E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		376ECA5417674BE700F8992E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				376ECA5517674BE700F8992E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		376ECA5D17674BE700F8992E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		376ECA5E17674BE700F8992E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		376ECA6017674BE700F8992E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Downloads\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mobile Rettungskarte/Mobile Rettungskarte-Prefix.pch";
+				INFOPLIST_FILE = "Mobile Rettungskarte/Mobile Rettungskarte-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		376ECA6117674BE700F8992E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Downloads\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mobile Rettungskarte/Mobile Rettungskarte-Prefix.pch";
+				INFOPLIST_FILE = "Mobile Rettungskarte/Mobile Rettungskarte-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		376ECA3417674BE700F8992E /* Build configuration list for PBXProject "Mobile Rettungskarte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376ECA5D17674BE700F8992E /* Debug */,
+				376ECA5E17674BE700F8992E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		376ECA5F17674BE700F8992E /* Build configuration list for PBXNativeTarget "Mobile Rettungskarte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				376ECA6017674BE700F8992E /* Debug */,
+				376ECA6117674BE700F8992E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 376ECA3117674BE700F8992E /* Project object */;
+}
