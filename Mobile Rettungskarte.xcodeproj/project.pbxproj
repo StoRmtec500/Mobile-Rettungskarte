@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373DA927176740C400F89C00 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373DA926176740C400F89C00 /* StoreKit.framework */; };
 		376A76301767295C00AA354C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376A762F1767295C00AA354C /* Foundation.framework */; };
 		376A76321767295C00AA354C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376A76311767295C00AA354C /* CoreGraphics.framework */; };
 		376A76341767295C00AA354C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376A76331767295C00AA354C /* UIKit.framework */; };
@@ -25,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		373DA9281767417600F89C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 376A76241767295A00AA354C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 376A764B1767297100AA354C;
+			remoteInfo = "Mobile RettungskarteTests";
+		};
 		376A76521767297100AA354C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 376A76241767295A00AA354C /* Project object */;
@@ -35,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		373DA926176740C400F89C00 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		376A762C1767295C00AA354C /* Mobile Rettungskarte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Rettungskarte.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		376A762F1767295C00AA354C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		376A76311767295C00AA354C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				373DA927176740C400F89C00 /* StoreKit.framework in Frameworks */,
 				376A76321767295C00AA354C /* CoreGraphics.framework in Frameworks */,
 				376A76361767295C00AA354C /* CoreData.framework in Frameworks */,
 				376A76341767295C00AA354C /* UIKit.framework in Frameworks */,
@@ -103,6 +113,7 @@
 		376A762E1767295C00AA354C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				373DA926176740C400F89C00 /* StoreKit.framework */,
 				376A762F1767295C00AA354C /* Foundation.framework */,
 				376A76311767295C00AA354C /* CoreGraphics.framework */,
 				376A76331767295C00AA354C /* UIKit.framework */,
@@ -167,6 +178,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				373DA9291767417600F89C00 /* PBXTargetDependency */,
 			);
 			name = "Mobile Rettungskarte";
 			productName = "Mobile Rettungskarte";
@@ -200,6 +212,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Martin Kuenz";
 				TargetAttributes = {
+					376A762B1767295B00AA354C = {
+						DevelopmentTeam = RKDQPG2MBM;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
 					376A764B1767297100AA354C = {
 						TestTargetID = 376A762B1767295B00AA354C;
 					};
@@ -265,6 +285,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		373DA9291767417600F89C00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 376A764B1767297100AA354C /* Mobile RettungskarteTests */;
+			targetProxy = 373DA9281767417600F89C00 /* PBXContainerItemProxy */;
+		};
 		376A76531767297100AA354C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 376A762B1767295B00AA354C /* Mobile Rettungskarte */;
@@ -308,7 +333,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -367,10 +392,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mobile Rettungskarte/Mobile Rettungskarte-Prefix.pch";
 				INFOPLIST_FILE = "Mobile Rettungskarte/Mobile Rettungskarte-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -380,10 +408,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mobile Rettungskarte/Mobile Rettungskarte-Prefix.pch";
 				INFOPLIST_FILE = "Mobile Rettungskarte/Mobile Rettungskarte-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -447,6 +478,7 @@
 				376A76601767297100AA354C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		376A76611767297100AA354C /* Build configuration list for PBXNativeTarget "Mobile RettungskarteTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +487,7 @@
 				376A76631767297100AA354C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
